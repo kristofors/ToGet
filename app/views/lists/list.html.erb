@@ -1,0 +1,5 @@
+<ul id="myLists" class="nav nav-pills nav-stacked">
+	<% @lists.each do |list| %>
+	<li id="list_<%= list.id %>"><a href="#" onclick="selectList(<%= list.id %>);"><span class="badge pull-right"><%= list.items.size %></span><%= list.list_name %></a></li>
+	<% end %>
+</ul>

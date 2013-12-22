@@ -1,0 +1,11 @@
+== README
+Howdy! This is a simple toget / wishlist.
+
+It was coded with luv using Ruby 2.0.0-p353 utilizing Rails 4.0
+
+The database it is set to work with is mysql
+
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
