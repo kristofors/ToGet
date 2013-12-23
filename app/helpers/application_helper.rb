@@ -1,11 +1,11 @@
 module ApplicationHelper
   def site_name
-     "A Little Shopping List"
+     "ToGet"
    end
 
    def site_url
      if Rails.env.production?
-       "http://shopping.projects.mym.ac"
+       "http://toget.projects.mym.ac"
      else
        "http://localhost:3000"
      end

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Shopping::Application.config.secret_key_base = '041aa44d3e2e6bda78075eaa903dbe3afc664f341cb51161b2638c06da16bf651cf7e230d549a6c80af9e2bb48fc3324e09f1ab12f08bc10ad192ebfe8c0ab8c'
+Toget::Application.config.secret_key_base = '041aa44d3e2e6bda78075eaa903dbe3afc664f341cb51161b2638c06da16bf651cf7e230d549a6c80af9e2bb48fc3324e09f1ab12f08bc10ad192ebfe8c0ab8c'

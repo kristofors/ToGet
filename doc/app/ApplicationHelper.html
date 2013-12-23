@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module ApplicationHelper - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/helpers/application_helper.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-full_title">#full_title</a>
+    
+    <li><a href="#method-i-meta_author">#meta_author</a>
+    
+    <li><a href="#method-i-meta_description">#meta_description</a>
+    
+    <li><a href="#method-i-meta_keywords">#meta_keywords</a>
+    
+    <li><a href="#method-i-site_name">#site_name</a>
+    
+    <li><a href="#method-i-site_url">#site_url</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./List.html">List</a>
+  
+    <li><a href="./ListsController.html">ListsController</a>
+  
+    <li><a href="./ListsHelper.html">ListsHelper</a>
+  
+    <li><a href="./PublicController.html">PublicController</a>
+  
+    <li><a href="./PublicHelper.html">PublicHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module ApplicationHelper</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-full_title" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">full_title</span><span
+            class="method-args">(page_title)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the full title on a per-page basis.</p>
+          
+
+          
+          <div class="method-source-code" id="full_title-source">
+            <pre><span class="ruby-comment"># File app/helpers/application_helper.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">full_title</span>(<span class="ruby-identifier">page_title</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">page_title</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-identifier">site_name</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">&quot;#{page_title} | #{site_name}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- full_title-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- full_title-method -->
+
+    
+      <div id="method-i-meta_author" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">meta_author</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="meta_author-source">
+            <pre><span class="ruby-comment"># File app/helpers/application_helper.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">meta_author</span>
+  <span class="ruby-string">&quot;Kristofor Vokes&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- meta_author-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- meta_author-method -->
+
+    
+      <div id="method-i-meta_description" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">meta_description</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="meta_description-source">
+            <pre><span class="ruby-comment"># File app/helpers/application_helper.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">meta_description</span>
+  <span class="ruby-string">&quot;A basic shopping list done in RoR&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- meta_description-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- meta_description-method -->
+
+    
+      <div id="method-i-meta_keywords" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">meta_keywords</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="meta_keywords-source">
+            <pre><span class="ruby-comment"># File app/helpers/application_helper.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">meta_keywords</span>
+  <span class="ruby-string">&quot;list ruby rails gift apple&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- meta_keywords-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- meta_keywords-method -->
+
+    
+      <div id="method-i-site_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">site_name</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="site_name-source">
+            <pre><span class="ruby-comment"># File app/helpers/application_helper.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">site_name</span>
+   <span class="ruby-string">&quot;ToGet&quot;</span>
+ <span class="ruby-keyword">end</span></pre>
+          </div><!-- site_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- site_name-method -->
+
+    
+      <div id="method-i-site_url" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">site_url</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="site_url-source">
+            <pre><span class="ruby-comment"># File app/helpers/application_helper.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">site_url</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">env</span>.<span class="ruby-identifier">production?</span>
+    <span class="ruby-string">&quot;http://toget.projects.mym.ac&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-string">&quot;http://localhost:3000&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- site_url-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- site_url-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Shopping::Application.load_tasks
+Toget::Application.load_tasks
